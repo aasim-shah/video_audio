@@ -18,9 +18,13 @@ app.use(express.json());
 app.use(express.urlencoded({extended : true}))
 
 const ffmpegPath = require('ffmpeg-static');
+const ffprobe = require('ffprobe-static');
+
 
 
 ffmpeg.setFfmpegPath(ffmpegPath);
+ffmpeg.setFfprobePath(ffprobe.path);
+
 
 
 // npm install assemblyai
