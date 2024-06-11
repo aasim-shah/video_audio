@@ -161,11 +161,9 @@ console.log(req.files);
     // });
 });
 
-app.get('/server',(req,res)=> {
+app.get('/',(req,res)=> {
 console.log("here is running");
-return res.send({
-  "message":"server running"
-});  
+return res.send("server is running !");  
 });
 // app.listen(port, () => {
 //   console.log(`Server running at http://localhost:${port}/`);
