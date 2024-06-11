@@ -163,7 +163,7 @@ console.log(req.files);
 
 app.get('/',(req,res)=> {
 console.log("here is running");
-return res.send("server is running !");  
+ res.send("server is running !");  
 });
 // app.listen(port, () => {
 //   console.log(`Server running at http://localhost:${port}/`);
